@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+	<menu>
+		<themeswitcher module="themeswitcher">
+			<title>Theme Switcher</title>
+			<sort_order>71</sort_order>               
+			<children>
+				<theme module="themeswitcher">
+					<title>Manage Themes</title>
+					<sort_order>0</sort_order>
+					<action>themeswitcher/adminhtml_themeswitcher</action>
+				</theme>
+			</children>
+		</themeswitcher>
+	</menu>
+	<acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+					<themeswitcher module="themeswitcher">
+						<title>Theme Switcher</title>
+						<sort_order>71</sort_order>               
+						<children>
+							<theme module="themeswitcher">
+								<title>Manage Themes</title>
+								<sort_order>0</sort_order>
+								<action>themeswitcher/adminhtml_themeswitcher</action>
+							</theme>
+						</children>
+					</themeswitcher>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>
