@@ -21,7 +21,7 @@
     #AddType x-mapp-php5 .php
     #AddHandler x-mapp-php5 .php
 
-############################################a comment for modifyng
+############################################
 ## default index file
 
     DirectoryIndex index.php
